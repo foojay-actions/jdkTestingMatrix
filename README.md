@@ -4,7 +4,7 @@ Used to verify jdk tests on various versions using Github Actions CI
 
 Latest JDK Update (in each of 6, 7, 8, 9, 10, 11, 12, 13, 14) Status:
 
-[![Java CIU](https://github.com/giltene/jdkTestingMatrix/workflows/Latest_JDK_Updates/badge.svg)](https://github.com/giltene/jdkTestingMatrix/actions)
+[![Java CIU](https://github.com/foojay-actions/jdkTestingMatrix/workflows/Latest_JDK_Updates/badge.svg)](https://github.com/giltene/jdkTestingMatrix/actions)
 
 Full JDK Updates (entire history) Matrix status:
 
