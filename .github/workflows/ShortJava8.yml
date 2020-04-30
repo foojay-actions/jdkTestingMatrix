@@ -3,7 +3,7 @@ name: ShortJava8
 on:
   push:
     paths:
-      - '.github/workflows/HalfAndHalfJava8.yml'
+      - '.github/workflows/ShortJava8.yml'
 
 jobs:
   java8:
