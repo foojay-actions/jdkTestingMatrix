@@ -10,7 +10,7 @@ on:
 
 jobs:
   java8:
-    # internal comment counter: 100
+    # internal comment counter: 101
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -45,7 +45,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Set up JDK
-      uses: actions/setup-java@v1
+      uses: giltene/setup-java@v1
       with:
         java-version: 8.0.${{ matrix.update }}
     - name: java -version
