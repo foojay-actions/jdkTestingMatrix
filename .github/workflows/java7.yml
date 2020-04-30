@@ -32,7 +32,7 @@ jobs:
         os: [macOS-latest]
         update: [x, 262, 252, 242, 232, 222, 211, 201, 191, 181, 171, 161, 154, 141, 131, 121, 111, 101, 95]
       fail-fast: false
-      max-parallel: 5
+      max-parallel: 6
     name: Mac-JDK 7.0.${{ matrix.update }}, ${{ matrix.os }}
 
     steps:
