@@ -16,7 +16,7 @@ jobs:
         os: [ubuntu-18.04, windows-2016]
         update: [x, 262, 252, 242, 232, 222, 211, 201, 191, 181, 171, 161, 154, 141, 131, 121, 111, 101, 95]
       fail-fast: false
-      max-parallel: 6
+      max-parallel: 5
     name: JDK 7.0.${{ matrix.update }}, ${{ matrix.os }}
 
     steps:
@@ -35,7 +35,7 @@ jobs:
         os: [macOS-latest]
         update: [x, 262, 252, 242, 232, 222, 211, 201, 191, 181, 171, 161, 154, 141, 131, 121, 111, 101, 95]
       fail-fast: false
-      max-parallel: 6
+      max-parallel: 5
     name: Mac-JDK 7.0.${{ matrix.update }}, ${{ matrix.os }}
 
     steps:
