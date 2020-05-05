@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - '*/*/java9.yml'
+    schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '35 */24 * * *'
 
 jobs:
   java9:
@@ -18,9 +21,9 @@ jobs:
     name: JDK 9.0.${{ matrix.update }}, ${{ matrix.os }}
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Set up JDK
-      uses: giltene/setup-java@master
+      uses: betzrhodes/setup-java@master
       with:
         java-version: 9.0.${{ matrix.update }}
     - name: java -version

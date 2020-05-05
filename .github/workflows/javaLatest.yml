@@ -21,9 +21,9 @@ jobs:
     name: JDK ${{ matrix.update }}, ${{ matrix.os }}
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Set up JDK
-      uses: giltene/setup-java@master
+      uses: betzrhodes/setup-java@master
       with:
         java-version: ${{ matrix.update }}
     - name: java -version
