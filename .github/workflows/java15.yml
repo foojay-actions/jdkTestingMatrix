@@ -23,7 +23,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK
-      uses: betzrhodes/setup-java@master
+      uses: giltene/setup-java@master
       with:
         java-version: ${{ matrix.update }}
     - name: java -version
